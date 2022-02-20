@@ -38,33 +38,6 @@ function AddNotes() {
         };
 
     // reading imgs for text
-    const detectText = async (storageRef) => {
-
-        const vision = require('@google-cloud/vision')
-    
-            const CREDENTIALS = JSON.parse(JSON.stringify({
-                // add your api json file data here
-                }))
-                    
-            const CONFIG = {
-                credentials: {
-                    private_key: CREDENTIALS.private_key,
-                    client_email: CREDENTIALS.client_email
-                }
-            };
-                    
-            const client = new vision.ImageAnnotatorClient(CONFIG)
-                    
-            const fileName = storageRef
-    
-            const [result] = await client.documentTextDetection(
-            `gs://${fileName}`
-            );
-            const fullTextAnnotation = result.fullTextAnnotation
-            console.log(fullTextAnnotation.text)
-    }
-    
-
 
   return (
     <div>
@@ -72,9 +45,8 @@ function AddNotes() {
         <input type="file" className="input" />
         <button type="submit">Upload</button>
       </form>
-      <hr />
       <h2 className='progressbar'>Uploading done {progress}%</h2>
-      <form onSubmit={detectText} className="addfile">
+      <form action='/newnotes' className="addfile">
         <button type="submit">Next</button>
       </form>
     </div>

@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rem;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+
+.notes {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rem;
+    margin-block: 1rem;
+    padding: 3px;
+    border: 2px solid #F4F1DE;
+    width: 30rem;
+    height: 10rem;
+    background-color: rgba($color: #F4F1DE, $alpha: .45);
+}
+
+
+.notes p {
+    color: #3D405B;
+}
+
+
+.notes h1 {
+    color: #3D405B;
+    text-decoration: underline;
+    font-size: 18px;
+    margin-bottom: 1rem;
+
+}
