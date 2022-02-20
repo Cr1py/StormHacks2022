@@ -1,4 +1,5 @@
 import * as FaIcons from 'react-icons/fa';
+import './NavBar.scss'
 
 export const NavBarData = [
     {
@@ -8,13 +9,13 @@ export const NavBarData = [
         className: 'navtext'
     },
     {
-        title: 'AddNotes',
+        title: 'Add Notes',
         path: '/addnotes',
         icon: <FaIcons.FaPlus />,
         className: 'navtext'
     },
     {
-        title: 'MyNotes',
+        title: 'My Notes',
         path: '/mynotes',
         icon: <FaIcons.FaFile />,
         className: 'navtext'
