@@ -1,20 +1,22 @@
 .navbar {
-    height: 70px;
+    height: 80px;
     background-color: #81B29A;
     display: flex;
     justify-content: start;
     align-items: center;
+    text-decoration: none;
+    
 }
-
 
 .menu-bars {
     margin-left: 2rem;
     font-size: 2rem;
     background: none;
+    text-decoration: none;
 }
 
-
 .nav-menu {
+    margin-top: 20px;
     background: #81B29A;
     width: 250px;
     height: 100vh;
@@ -24,14 +26,14 @@
     top: 0;
     left: -100%;
     transition: .5s;
-
+    text-decoration: none;
 }
 
 .nav-menu.active {
     left: 0;
     transition: 1s;
+    text-decoration: none;
 }
-
 
 .navtext {
     display: flex;
@@ -39,8 +41,8 @@
     align-items: center;
     padding: 15px;
     list-style: none;
-    height: 50px;
-
+    height: 7rem;
+    text-decoration: none;
 }
 
 
@@ -52,9 +54,7 @@
     height: 100;
     display: flex;
     align-items: center;
-
 }
-
 
 
 

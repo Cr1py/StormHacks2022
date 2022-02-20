@@ -15,16 +15,16 @@ function Navbar() {
 
     return (
         <div>
-            <div className='navbar'> 
+            <div className='navbar'>
                 <Link to='#' className='menu-bars'>
                     <FaIcons.FaBars onClick={showNav} />
                 </Link>
             </div>
 
             <nav className={nav ? 'nav-menu active' : 'nav-menu'}>
-                <ul className='nav-menu-items' onClick={showNav}>
+                <ul className='nav-menu-items' onClick={showNav} >
                     <li>
-                        <Link to='#' className='menu-bars'>
+                        <Link to='#' className='menu-bars' >
                             <FaIcons.FaOutdent/>
                         </Link>
                     </li>
